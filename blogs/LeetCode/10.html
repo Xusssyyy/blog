@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>快乐数 &amp;&amp; 两个数组的交集 &amp;&amp; 有效的字母异位词 | Shark Xu 的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/blog/blue.jpg">
+    <meta name="description" content="没有伞的孩子必须努力奔跑 —— 永远清醒 永远温柔 永远知进退">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.acc5c5a5.css" as="style"><link rel="preload" href="/blog/assets/js/app.aa1056b8.js" as="script"><link rel="preload" href="/blog/assets/js/3.a9fde2ae.js" as="script"><link rel="preload" href="/blog/assets/js/1.16b4e971.js" as="script"><link rel="preload" href="/blog/assets/js/23.97743099.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.716b3fb6.js"><link rel="prefetch" href="/blog/assets/js/11.76989f3b.js"><link rel="prefetch" href="/blog/assets/js/12.d4f814dc.js"><link rel="prefetch" href="/blog/assets/js/13.e2486801.js"><link rel="prefetch" href="/blog/assets/js/14.910b3bed.js"><link rel="prefetch" href="/blog/assets/js/15.18184a67.js"><link rel="prefetch" href="/blog/assets/js/16.2e3a40a5.js"><link rel="prefetch" href="/blog/assets/js/17.fc5da858.js"><link rel="prefetch" href="/blog/assets/js/18.a4f54408.js"><link rel="prefetch" href="/blog/assets/js/19.b2456ff4.js"><link rel="prefetch" href="/blog/assets/js/20.fca21514.js"><link rel="prefetch" href="/blog/assets/js/21.5e8d6eb3.js"><link rel="prefetch" href="/blog/assets/js/22.332c69fb.js"><link rel="prefetch" href="/blog/assets/js/24.08c5ca29.js"><link rel="prefetch" href="/blog/assets/js/25.ebb52f81.js"><link rel="prefetch" href="/blog/assets/js/26.6c35fdeb.js"><link rel="prefetch" href="/blog/assets/js/27.c2ca7580.js"><link rel="prefetch" href="/blog/assets/js/28.cdd62b0a.js"><link rel="prefetch" href="/blog/assets/js/29.0b4cca16.js"><link rel="prefetch" href="/blog/assets/js/30.8d48932d.js"><link rel="prefetch" href="/blog/assets/js/31.68a049a9.js"><link rel="prefetch" href="/blog/assets/js/32.5d6fcada.js"><link rel="prefetch" href="/blog/assets/js/33.be1162df.js"><link rel="prefetch" href="/blog/assets/js/34.49f781fd.js"><link rel="prefetch" href="/blog/assets/js/4.baa86666.js"><link rel="prefetch" href="/blog/assets/js/5.39961fb3.js"><link rel="prefetch" href="/blog/assets/js/6.9e7e4761.js"><link rel="prefetch" href="/blog/assets/js/7.d9020c12.js"><link rel="prefetch" href="/blog/assets/js/8.a6a00048.js"><link rel="prefetch" href="/blog/assets/js/9.47c7bae8.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.acc5c5a5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>Shark Xu 的博客</h3> <p class="description" data-v-59e6cb88>没有伞的孩子必须努力奔跑 —— 永远清醒 永远温柔 永远知进退</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>Shark Xu</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/avatar.jpg" alt="Shark Xu 的博客" class="logo"> <span class="site-name">Shark Xu 的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/随笔/" class="nav-link"><i class="undefined"></i>
+  随笔
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/刷题/" class="nav-link"><i class="undefined"></i>
+  刷题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/233526039432445" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Xusssyyy" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  百度
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://meiriyiwen.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  每日一文
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/blog/avatar.jpg" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    Shark Xu
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>24</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>12</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/随笔/" class="nav-link"><i class="undefined"></i>
+  随笔
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/刷题/" class="nav-link"><i class="undefined"></i>
+  刷题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/233526039432445" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Xusssyyy" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  百度
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://meiriyiwen.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  每日一文
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>快乐数 &amp;&amp; 两个数组的交集 &amp;&amp; 有效的字母异位词</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>Shark Xu</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">快乐数 &amp;&amp; 两个数组的交集 &amp;&amp; 有效的字母异位词</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>Shark Xu</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/1/3</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>LeetCode</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="快乐数"><a href="#快乐数" class="header-anchor">#</a> 快乐数</h2> <p>这是力扣 202 题</p> <blockquote><p>编写一个算法来判断一个数 n 是不是快乐数。</p> <p>「快乐数」  定义为：
+对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和。
+然后重复这个过程直到这个数变为 1，也可能是 无限循环 但始终变不到 1。
+如果这个过程 结果为  1，那么这个数就是快乐数。
+如果 n 是 快乐数 就返回 true ；不是，则返回 false 。</p></blockquote> <h2 id="解题思路"><a href="#解题思路" class="header-anchor">#</a> 解题思路</h2> <p>这道题题目十分简短，但是并不是像表面一样那么容易。它有很多种解法，比如哈希法，双指针法。由于考虑到时间复杂度的问题，所以这次主要来讲一下时间复杂度更低的双指针法，这里又称快慢指针法。</p> <h3 id="双指针法"><a href="#双指针法" class="header-anchor">#</a> 双指针法</h3> <p>这道题我们可以换个思路，简化一下，理解成如下这样：
+我们把它想像成快跑者和慢跑者。
+如果 <code>n</code> 是一个快乐数，即没有循环，那么快跑者最终会比慢跑者先到达数字 <code>1</code>。
+如果 <code>n</code> 不是一个快乐的数字，那么最终快跑者和慢跑者将在同一个数字上相遇。</p> <p>所以可以创建两个指针，分别是快指针和慢指针，整体思路如下：</p> <ul><li>首先创建一个慢指针，规定一次移动一步，再创建一个快指针，规定一次移动两步。</li> <li>当快慢指针相遇时，代表形成环路，说明该数不是快乐数。</li> <li>若指针移动过程中，最终找到了 <code>1</code>，则说明当前数是一个快乐数。</li> <li>最后 <code>return</code> 返回最终结果</li></ul> <p>相关代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>var isHappy = function (n) {
+	    let slow = n;
+	    // 有可能第一步就判断出是快乐数
+	    let fast = getNext(n);
+	    while (fast !== 1) {
+	        slow = getNext(slow);
+	        fast = getNext(getNext(fast));
+	        if (slow === fast) {
+	            return false;
+	        }
+	    }
+	    return fast === 1;
+	}
+	let getNext = function (n) {
+	    let sum = 0;
+	    while (n &gt; 0) {
+	        sum += Math.pow(n % 10, 2);
+	        n = Math.floor(n / 10);
+	    }
+	    return sum;
+	}
+</code></pre></div><p>根据思路对着代码不断演示，这样就可以理清楚其中的关系了。</p> <h2 id="两个数组的交集"><a href="#两个数组的交集" class="header-anchor">#</a> 两个数组的交集</h2> <p>这是力扣 349 题</p> <blockquote><p>给定两个数组  <code>nums1</code>  和  <code>nums2</code> ，返回  <em>它们的交集</em> 。输出结果中的每个元素一定是  <strong>唯一</strong>  的。我们可以  <strong>不考虑输出结果的顺序</strong> 。</p></blockquote> <h2 id="解题思路-2"><a href="#解题思路-2" class="header-anchor">#</a> 解题思路</h2> <p>在上一篇有关哈希表的文章里就提到过，如果当我们遇到要判断一个元素是否出现集合里的题目的时候，就可以考虑哈希表法。因此，这题首选哈希表法。</p> <h3 id="哈希表法"><a href="#哈希表法" class="header-anchor">#</a> 哈希表法</h3> <p>我们不用考虑输出结果的排序，因为题目上已经说明输出元素的结果是唯一的。对于这道题，这里要用到哈希表的另一种结果体，<code>Set</code>。在 <code>Set</code> 中，<code>Set</code> 对象存储的值总是唯一的。将数组通过 <code>Set</code> 存储后，然后进行比较，判断是否存在相同的值。</p> <p>大概思路如下：
+先将数组转成 <code>Set</code>，然后遍历长度小的 <code>Set</code>，判断长度小的 <code>Set</code> 中的元素是否存在于长度大的 <code>Set</code> 中，存在的话就是其中一个交集。</p> <p>相关代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>var intersection = function(nums1, nums2) {
+  let set1 = null
+  let set2 = null
+  let arr = []
+  // set1中的长度长
+  if (nums1.length &gt;= nums2.length) {
+    set1 = new Set(nums1)
+    set2 = new Set(nums2)
+  } else {
+    set1 = new Set(nums2)
+    set2 = new Set(nums1)
+  }
+  for (let item of set2) {
+    if (set1.has(item)) {
+      arr.push(item)
+    }
+  }
+  return arr
+};
+</code></pre></div><p>看到这里，是不是会觉得 <code>Set</code> 很强大，感觉哈希表的题目都可以通过 <code>Set</code> 来解决。其实并不是这样，如果在数据量特别大的情况下，使用 <code>Set</code> 会有特别大的耗时。现在因为数据量比较小，所以察觉不到这个耗时的差距。总之，使用 <code>Set</code> 会占用更多空间，而且比较耗时，这都是潜在的缺点，但是解决一下力扣题目当然是没有问题的。</p> <h2 id="有效的字母异位词"><a href="#有效的字母异位词" class="header-anchor">#</a> 有效的字母异位词</h2> <blockquote><p>给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。注意：若  s 和 t  中每个字符出现的次数都相同，则称  s 和 t  互为字母异位词。</p></blockquote> <h2 id="解题思路-3"><a href="#解题思路-3" class="header-anchor">#</a> 解题思路</h2> <p>陆陆续续讲完一部分数组和链表的题目，现在到了哈希表的环节了。这道有效的字母异位词，有很多种解法，比如排序和哈希表，这里将重点介绍哈希表解法，以此来引出哈希表相关的知识。先简单说说哈希表吧，哈希表可以看成是数组，数组也可以看成是哈希表。当我们遇到要判断一个元素是否出现集合里的题目的时候，就可以考虑哈希表法。</p> <h3 id="排序"><a href="#排序" class="header-anchor">#</a> 排序</h3> <p>这道题的意思可以转换为两个字符串排序后相等。分别将两个字符串排序，然后比较两个排序后的字符串。排序法很简单，也很容易理解。</p> <p>相关代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>var isAnagram = function(s, t) {
+    // 如果两个字符串长度不一样则不可能满足条件
+    if (s.length !== t.length) {
+        return false;
+    }
+    // 将字符串转为数组
+    const arr1 = Array.from(s);
+    const arr2 = Array.from(t);
+    arr1.sort();
+    arr2.sort();
+    for (let i = 0; i &lt; arr1.length; i++) {
+        if (arr1[i] !== arr2[i]) {
+            return false;
+        }
+    }
+    return true;
+};
+</code></pre></div><h3 id="哈希表法-2"><a href="#哈希表法-2" class="header-anchor">#</a> 哈希表法</h3> <p>如果用哈希表来解它，这道题的意思就可以转换成两个字符串中出现的字符种类和数量都相等。因此创建一个字母表，分别遍历并记录两个字符串，减去字母表中对应的数量。如果到了小于 0 的情况，说明其中一个字符串包含着另一个字符串不存在的字母。此处需要用到<code>codePointAt()</code> 方法返回一个 <code>Unicode</code> 编码点值的非负整数。</p> <p>相关代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>var isAnagram = function(s, t) {
+ // 如果两个字符串长度不一样则不可能满足条件
+    if (s.length !== t.length) {
+        return false;
+    }
+    const hashtable = new Array(26).fill(0);
+    for (let i = 0; i &lt; s.length; ++i) {
+        hashtable[s.codePointAt(i) - 'a'.codePointAt(0)]++;
+    }
+    for (let i = 0; i &lt; t.length; ++i) {
+        hashtable[t.codePointAt(i) - 'a'.codePointAt(0)]--;
+        if (hashtable[t.codePointAt(i) - 'a'.codePointAt(0)] &lt; 0) {
+            return false;
+        }
+    }
+    return true;
+};
+</code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/blogs/LeetCode/9.html" class="prev">
+          最后一个单词的长度 &amp;&amp; 三数之和 &amp;&amp; 两数之和
+        </a></span> <span class="next"><a href="/blog/blogs/LeetCode/11.html">
+          相交链表 &amp;&amp; 删除链表的倒数第 N 个结点 &amp;&amp; 两两交换链表中的节点
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/LeetCode/10.html#快乐数" class="sidebar-link reco-side-快乐数" data-v-b57cc07c>快乐数</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/LeetCode/10.html#解题思路" class="sidebar-link reco-side-解题思路" data-v-b57cc07c>解题思路</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/blogs/LeetCode/10.html#双指针法" class="sidebar-link reco-side-双指针法" data-v-b57cc07c>双指针法</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/LeetCode/10.html#两个数组的交集" class="sidebar-link reco-side-两个数组的交集" data-v-b57cc07c>两个数组的交集</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/LeetCode/10.html#解题思路-2" class="sidebar-link reco-side-解题思路-2" data-v-b57cc07c>解题思路</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/blogs/LeetCode/10.html#哈希表法" class="sidebar-link reco-side-哈希表法" data-v-b57cc07c>哈希表法</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/LeetCode/10.html#有效的字母异位词" class="sidebar-link reco-side-有效的字母异位词" data-v-b57cc07c>有效的字母异位词</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/LeetCode/10.html#解题思路-3" class="sidebar-link reco-side-解题思路-3" data-v-b57cc07c>解题思路</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/blogs/LeetCode/10.html#排序" class="sidebar-link reco-side-排序" data-v-b57cc07c>排序</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/blogs/LeetCode/10.html#哈希表法-2" class="sidebar-link reco-side-哈希表法-2" data-v-b57cc07c>哈希表法</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><canvas id="vuepress-canvas-cursor"></canvas><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://assets.smallsunnyfox.com/music/2.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:20px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://assets.smallsunnyfox.com/music/3.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://assets.smallsunnyfox.com/music/3.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>강남역 4번 출구</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>Plastic / Fallin` Dild</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div></div></div>
+    <script src="/blog/assets/js/app.aa1056b8.js" defer></script><script src="/blog/assets/js/3.a9fde2ae.js" defer></script><script src="/blog/assets/js/1.16b4e971.js" defer></script><script src="/blog/assets/js/23.97743099.js" defer></script>
+  </body>
+</html>

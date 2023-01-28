@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>耽误你一点时间！这份Vuepress搭建博客的保姆级教程请收好！ | Shark Xu 的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/blog/blue.jpg">
+    <meta name="description" content="没有伞的孩子必须努力奔跑 —— 永远清醒 永远温柔 永远知进退">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.acc5c5a5.css" as="style"><link rel="preload" href="/blog/assets/js/app.aa1056b8.js" as="script"><link rel="preload" href="/blog/assets/js/3.a9fde2ae.js" as="script"><link rel="preload" href="/blog/assets/js/1.16b4e971.js" as="script"><link rel="preload" href="/blog/assets/js/21.5e8d6eb3.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.716b3fb6.js"><link rel="prefetch" href="/blog/assets/js/11.76989f3b.js"><link rel="prefetch" href="/blog/assets/js/12.d4f814dc.js"><link rel="prefetch" href="/blog/assets/js/13.e2486801.js"><link rel="prefetch" href="/blog/assets/js/14.910b3bed.js"><link rel="prefetch" href="/blog/assets/js/15.18184a67.js"><link rel="prefetch" href="/blog/assets/js/16.2e3a40a5.js"><link rel="prefetch" href="/blog/assets/js/17.fc5da858.js"><link rel="prefetch" href="/blog/assets/js/18.a4f54408.js"><link rel="prefetch" href="/blog/assets/js/19.b2456ff4.js"><link rel="prefetch" href="/blog/assets/js/20.fca21514.js"><link rel="prefetch" href="/blog/assets/js/22.332c69fb.js"><link rel="prefetch" href="/blog/assets/js/23.97743099.js"><link rel="prefetch" href="/blog/assets/js/24.08c5ca29.js"><link rel="prefetch" href="/blog/assets/js/25.ebb52f81.js"><link rel="prefetch" href="/blog/assets/js/26.6c35fdeb.js"><link rel="prefetch" href="/blog/assets/js/27.c2ca7580.js"><link rel="prefetch" href="/blog/assets/js/28.cdd62b0a.js"><link rel="prefetch" href="/blog/assets/js/29.0b4cca16.js"><link rel="prefetch" href="/blog/assets/js/30.8d48932d.js"><link rel="prefetch" href="/blog/assets/js/31.68a049a9.js"><link rel="prefetch" href="/blog/assets/js/32.5d6fcada.js"><link rel="prefetch" href="/blog/assets/js/33.be1162df.js"><link rel="prefetch" href="/blog/assets/js/34.49f781fd.js"><link rel="prefetch" href="/blog/assets/js/4.baa86666.js"><link rel="prefetch" href="/blog/assets/js/5.39961fb3.js"><link rel="prefetch" href="/blog/assets/js/6.9e7e4761.js"><link rel="prefetch" href="/blog/assets/js/7.d9020c12.js"><link rel="prefetch" href="/blog/assets/js/8.a6a00048.js"><link rel="prefetch" href="/blog/assets/js/9.47c7bae8.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.acc5c5a5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>Shark Xu 的博客</h3> <p class="description" data-v-59e6cb88>没有伞的孩子必须努力奔跑 —— 永远清醒 永远温柔 永远知进退</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>Shark Xu</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/avatar.jpg" alt="Shark Xu 的博客" class="logo"> <span class="site-name">Shark Xu 的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/随笔/" class="nav-link"><i class="undefined"></i>
+  随笔
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/刷题/" class="nav-link"><i class="undefined"></i>
+  刷题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/233526039432445" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Xusssyyy" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  百度
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://meiriyiwen.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  每日一文
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/blog/avatar.jpg" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    Shark Xu
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>24</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>12</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/随笔/" class="nav-link"><i class="undefined"></i>
+  随笔
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/刷题/" class="nav-link"><i class="undefined"></i>
+  刷题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      我的
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/233526039432445" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Xusssyyy" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  百度
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://meiriyiwen.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  每日一文
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>耽误你一点时间！这份Vuepress搭建博客的保姆级教程请收好！</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>Shark Xu</span>
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">耽误你一点时间！这份Vuepress搭建博客的保姆级教程请收好！</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>Shark Xu</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/1/16</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>Vue</span></i></div></div> <div class="theme-reco-content content__default"><p><a href="https://juejin.cn/post/7189073364365869093" target="_blank" rel="noopener noreferrer">文章连接<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h1 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h1> <p>哈喽，大家好，又和大家见面了。这是一期关于用 <code>Vuepress</code> 搭建博客并将它部署到 <code>Github Pages</code> 上的教程文章，事情的起因还得从我上周发的一篇沸点说起。</p> <img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d96636326ab4f47b7fcddac73ce37f1~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a5639e5d961f4b8793349e9cccc1804c~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"></td> <td><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4d6a5c96daa14804b961980c8c758b5d~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"></td></tr></tbody></table> <p>因此，不负广大掘友众望，这篇教程如约而至。</p> <p>我的博客地址如下：https://xusssyyy.github.io/blog/</p> <p>第一次打开的时候可能会比较卡，如果卡的话建议用切换数据流量来打开博客。手机移动端和电脑 <code>PC</code> 端都是可以查看的。</p> <p>这里我会介绍两版教程，一是基础版，二是升级版。</p> <h1 id="何为-vuepress"><a href="#何为-vuepress" class="header-anchor">#</a> 何为 Vuepress</h1> <p>在开始搭建博客前，我们先来介绍一下 <code>Vuepress</code>，这里我用我之前的一篇文章来简单概述一下吧。<code>Vuepress</code> 是由 <code>Vue</code> 支持的静态网站生成工具，<code>Vue</code> 大家都知道或者使用过吧，一种轻量级且好用的框架，因为 <code>Vue</code> 上手起来很简单，所以 <code>Vuepress</code> 使用起来也不难。如果想快速搭建一个静态的博客网站来简单记录记录笔记或者文章，用 <code>Vuepress</code> 是个不错的选择，因为它对新手很友好。</p> <h1 id="基础版"><a href="#基础版" class="header-anchor">#</a> 基础版</h1> <p>介绍完 <code>Vuepress</code>，我们就可以开始进行博客的搭建了。先给大家看一下最终完成之后的博客项目的目录结构吧。</p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/48a3953e799b47ceb6a5135bea700b55~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>结构简单清晰明了，没有特别复杂的东西。接下来我开始手把手教大家搭建此项目。</p> <h2 id="本地初步搭建"><a href="#本地初步搭建" class="header-anchor">#</a> 本地初步搭建</h2> <p>我们首先创建并进入一个新文件夹，这里我们把它命名为 <strong>blogs</strong>（博客）吧。</p> <div class="language- extra-class"><pre class="language-text"><code>mkdir blogs
+cd blogs
+</code></pre></div><p>然后使用 <strong>npm</strong> 或者 <strong>yarn</strong> 进行初始化，我这里使用的是 <strong>npm</strong> 包管理器。</p> <div class="language- extra-class"><pre class="language-text"><code>npm init -y
+</code></pre></div><p>然后安装 <code>VuePress</code> 为本地依赖。</p> <div class="language- extra-class"><pre class="language-text"><code>npm install -D vuepress
+</code></pre></div><p>完成这些之后开始创建我们的第一篇文档，先创建 <strong>docs</strong> 文件夹，然后在文件夹下创建 <strong>README.md</strong> 文件，<strong>README.md</strong> 文件中我们可以随意加入点内容，比如 <code>Hello Vuepress</code>。</p> <p>这里需要注意，如果使用如下命令创建的话，后续可能会出现乱码的情况，这时候只需将<strong>README.md</strong> 的编码格式改为 <code>UTF-8</code> 即可</p> <div class="language- extra-class"><pre class="language-text"><code>mkdir docs
+echo '# Hello VuePress' &gt; docs/README.md
+</code></pre></div><table><thead><tr><th>正常的格式</th> <th>会导致乱码的格式</th></tr></thead> <tbody><tr><td><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e9576a8b8acb451aadccaa4316eae762~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"></td> <td><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/511c28fa60a64653860cb1b00aa5a935~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"></td></tr></tbody></table> <p>最后，我们再向 <strong>package.json</strong> 中的 <strong>scripts</strong> 里添加如下代码。</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;scripts&quot;: {
+  &quot;docs:dev&quot;: &quot;vuepress dev docs&quot;,
+  &quot;docs:build&quot;: &quot;vuepress build docs&quot;
+}
+</code></pre></div><p>完成这些之后一个初步的博客框架就出来了，通过如下代码在本地启动服务器可以查看。</p> <div class="language- extra-class"><pre class="language-text"><code>npm run docs:dev
+</code></pre></div><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/368a47b05b4d401894ee38b1ce774c44~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <p>项目运行在 <code>8080</code> 端口。</p> <h2 id="基本配置"><a href="#基本配置" class="header-anchor">#</a> 基本配置</h2> <p>一个初步的框架是远远不够将博客支撑起来的，我们还需要做一些基本配置。</p> <h3 id="_1-添加标题和描述"><a href="#_1-添加标题和描述" class="header-anchor">#</a> 1. 添加标题和描述</h3> <p>在 <strong>docs</strong> 文件夹下添加 <strong>.vuepress</strong>  目录，所有 <code>VuePress</code> 相关的文件都会被放在这里。在  <strong>.vuepress</strong>  文件夹下添加  <strong>config.js</strong>，配置网站的标题和描述，此时项目的目录结构是这样的：</p> <div class="language- extra-class"><pre class="language-text"><code>docs/
+   README.md/
+   .vuepress/
+        config.js/
+</code></pre></div><p><strong>config.js</strong> 文件的内容如下(标题和描述自定义)：</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+  title: 'XXX的博客',
+  description: 'YYY'
+}
+</code></pre></div><h3 id="_2-添加导航栏"><a href="#_2-添加导航栏" class="header-anchor">#</a> 2. 添加导航栏</h3> <p>我们在首页的右上角添加导航栏，需要修改 <strong>config.js</strong>：</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+  title: 'XXX的博客',
+  description: 'YYY',
+  themeConfig: {
+    nav: [
+      { text: &quot;首页&quot;, link: &quot;/&quot; },
+      {
+        text: &quot;Shark Xu 的博客&quot;,
+        items: [
+          { text: &quot;掘金&quot;, link: &quot;https://juejin.cn/user/233526039432445&quot; },
+          { text: &quot;Github&quot;, link: &quot;https://github.com/Xusssyyy&quot; }
+        ]
+      }
+    ]
+  }
+}
+</code></pre></div><h3 id="_3-添加侧边栏"><a href="#_3-添加侧边栏" class="header-anchor">#</a> 3. 添加侧边栏</h3> <p>现在我们添加一些侧边栏，内容自定义添加，此时项目的目录结构如下：</p> <div class="language- extra-class"><pre class="language-text"><code>docs/
+   README.md/
+   .vuepress/
+        config.js/
+   blogs/
+        1.md/
+        2.md/
+</code></pre></div><p>我们在  <strong>config.js</strong>  添加如下配置：</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+  title: 'XXX的博客',
+  description: 'YYY',
+  themeConfig: {
+    nav: [...],
+    sidebar: [
+      {
+        title: &quot;欢迎学习&quot;,
+        path: &quot;/&quot;,
+        collapsable: false,  // 是否折叠
+        children: [{ title: &quot;博客简介&quot;, path: &quot;/&quot; }],
+      },
+      {
+        title: &quot;基础篇&quot;,
+        path: &quot;/blogs/1&quot;,
+        collapsable: true,
+        children: [
+          { title: &quot;第一篇&quot;, path: &quot;/blogs/1&quot; },
+          { title: &quot;第二篇&quot;, path: &quot;/blogs/2&quot; },
+        ]
+      }
+    ]
+  }
+}
+</code></pre></div><p>此时界面效果如下：</p> <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b68aad6b27104fbbb173ab98c84eb58f~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <h2 id="加入主题"><a href="#加入主题" class="header-anchor">#</a> 加入主题</h2> <p>现在博客的基本功能已经实现，如果还想要更多类似于加载、切换等效果或者功能的话，我们可以直接使用主题，这里我使用的主题是  <a href="https://link.juejin.cn?target=https%3A%2F%2Fvuepress-theme-reco.recoluan.com%2F" title="https://vuepress-theme-reco.recoluan.com/" target="_blank" rel="noopener noreferrer">vuepress-theme-reco<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，一款简洁而大气的主题。</p> <h3 id="_1-vuepress-theme-reco"><a href="#_1-vuepress-theme-reco" class="header-anchor">#</a> 1. vuepress-theme-reco</h3> <p>现在我们安装 <code>vuepress-theme-reco</code>：</p> <div class="language- extra-class"><pre class="language-text"><code>npm install vuepress-theme-reco --save-dev
+</code></pre></div><p>然后需要在  <strong>config.js</strong>  中引用该主题：</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+  title: 'XXX的博客',
+  description: 'YYY',
+  theme: 'reco',
+  nav: [...],
+  themeConfig: [...],
+}
+</code></pre></div><p>此时界面效果如下：</p> <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/62e33b3b3fe649f38f6841a00a5c86af~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <h3 id="_2-其他主题"><a href="#_2-其他主题" class="header-anchor">#</a> 2. 其他主题</h3> <p>除了 <code>vuepress-theme-reco</code> 这个主题，还有很多其他主题，比如 <a href="https://vuepress-theme-hope.github.io/v2/zh/" target="_blank" rel="noopener noreferrer">vuepress-theme-hope<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 也会是个不错的主题选择，这里我就不介绍它了，感兴趣的朋友可以去官网上查找它的相关资料。</p> <h2 id="整体样式修改"><a href="#整体样式修改" class="header-anchor">#</a> 整体样式修改</h2> <p>我们可以通过添加相关文件来修改博客的默认样式。</p> <h3 id="_1-主题色修改"><a href="#_1-主题色修改" class="header-anchor">#</a> 1. 主题色修改</h3> <p><code>VuePress</code> 默认主题颜色是绿色，我们可以将主题颜色修改为自己喜欢的颜色。在 <strong>.vuepress</strong> 目录下创建 <strong>styles</strong> 文件夹，<strong>styles</strong> 文件夹里创建一个  <strong>palette.styl</strong>  文件，文件代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>$accentColor = #3178c6  // 蓝色主题色
+</code></pre></div><p>这就可以将主题颜色改为蓝色了。</p> <h3 id="_2-其他样式修改"><a href="#_2-其他样式修改" class="header-anchor">#</a> 2. 其他样式修改</h3> <p>如果我们切换到暗黑模式下，可能会发现文字看不清楚，所以我们需要修改文字的颜色和背景色。</p> <p>在之前创建好的 <strong>styles</strong> 文件夹下再新建一个  <strong>index.styl</strong>  文件，文件代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>.dark .content__default code {
+  background-color: rgba(58,58,92,0.7);
+  color: #fff;
+}
+</code></pre></div><p>这样就可以解决上面那个问题了。完成这些之后，此时项目的目录结构如下：</p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cd3d6c1ddf8246399f23fa0bd2a20d89~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>最终一个基础版的简单博客界面就搭建好了。</p> <blockquote><p>正常模式</p></blockquote> <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2247b6723a4f4bb5a003296bcc4d4dc8~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <blockquote><p>暗黑模式</p></blockquote> <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ff0d5915b47740288f2abbad9307d418~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <p>如果后面还需要增加新内容，可以按照上面同样的方式在 <strong>blogs</strong> 目录下新增 <strong>md</strong> 文档即可。</p> <h1 id="升级版"><a href="#升级版" class="header-anchor">#</a> 升级版</h1> <p>之所以称为基础版，是因为我们并没有添加额外的插件来丰富博客。如果想要美化升级自己的博客，接下来我将介绍通过插件来丰富后的升级版博客。</p> <h2 id="分类和标签"><a href="#分类和标签" class="header-anchor">#</a> 分类和标签</h2> <p>我们将重新改变整体的布局，使用另一套布局方式。将上述介绍的侧边栏 <code>slidebar</code> 去除，加入博客配置 <code>blogConfig</code>。</p> <div class="language- extra-class"><pre class="language-text"><code> module.exports = {
+  title: 'XXX的博客',
+  description: 'YYY',
+  themeConfig: {
+    nav: [...],
+    // 博客配置
+    blogConfig: {
+      category: {
+        location: 2, // 在导航栏菜单中所占的位置，默认2
+        text: &quot;博客&quot;, // 默认文案 “分类”
+      },
+      tag: {
+        location: 4, // 在导航栏菜单中所占的位置，默认4
+        text: &quot;Tag&quot;, // 默认文案 “标签”
+      },
+    },
+  }
+}
+</code></pre></div><p>这时候如果将项目运行起来，博客分类这一栏是不会显示的，因为我们并没有写入分类的内容，而分类内容的写入将在下面的文章信息里介绍。</p> <h2 id="文章信息"><a href="#文章信息" class="header-anchor">#</a> 文章信息</h2> <p>文章信息包括很多，比如标题，日期，分类，标签等等，实现这些我们只需要在每篇 <code>md</code> 文档的前面加入如下示例代码即可。</p> <div class="language- extra-class"><pre class="language-text"><code>---
+title: 手把手教你轻松手写防抖和节流🔥
+date: 2023-1-1
+categories:
+  - 前端
+tags:
+  - JavaScript
+  - 手写
+sticky: 1
+---
+</code></pre></div><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4acf8986936e40169a923a452b0d67a7~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <p><code>title</code> 是标题，<code>date</code> 是日期，<code>categories</code> 是分类，<code>tags</code> 是标签，可以有多个分类和标签，<code>sticky</code> 可以让文章置顶，数字表示顺序，<code>1</code> 表示在最上面，<code>2</code> 其次。这里的代码格式一定是按照如上写法：变量后面要加冒号，冒号后面要有空格，不要加逗号。</p> <p>这里的作者名 <code>Shark Xu</code> 是在 <strong>config.js</strong> 中的 <code>themeConfig</code> 里设置的，这样每篇文章里就会附上设置好的作者名。</p> <div class="language- extra-class"><pre class="language-text"><code>author: &quot;Shark Xu&quot;,
+</code></pre></div><p>当我们填写了分类后，就会在博客那一栏下面生成相应的分类，自己需要哪些分类，在里面自定义即可。比如我这里就定义了随笔、前端以及刷题三个分类。</p> <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/75a4884463164834a4ab3619b2bbb284~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <h2 id="日期的格式"><a href="#日期的格式" class="header-anchor">#</a> 日期的格式</h2> <p>对于日期的格式问题，我们只需在 <strong>config.js</strong> 中加入如下代码即可。这样日期的格式就会从 <code>2023-1-1</code> 变为 <code>2023/1/1</code>。</p> <div class="language- extra-class"><pre class="language-text"><code> module.exports = {
+  ...
+  locales: {
+    &quot;/&quot;: {
+      lang: &quot;zh-CN&quot;,
+    },
+  },
+  ...
+}
+</code></pre></div><h2 id="头像图标"><a href="#头像图标" class="header-anchor">#</a> 头像图标</h2> <p>对于头像图标等这类静态资源，我们需要在 <strong>.vuepress</strong> 目录下新建 <strong>public</strong> 文件夹，把它们放在 <strong>.vuepress/public</strong> 下。这里只需要在 <strong>config.js</strong> 中的 <code>themeConfig</code> 里加入如下语句：</p> <div class="language- extra-class"><pre class="language-text"><code> logo: &quot;/avatar.jpg&quot;,
+ authorAvatar: &quot;/avatar.jpg&quot;,
+</code></pre></div><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c6b9c7569d284d17940e4a29fcf3fa23~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6252d7abe62d455788683d93442788bf~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <h2 id="首页配置"><a href="#首页配置" class="header-anchor">#</a> 首页配置</h2> <p>我们首先在 <strong>config.js</strong> 中的 <code>themeConfig</code> 里加入如下语句，这是指定的 <code>blog</code> 类型。</p> <div class="language- extra-class"><pre class="language-text"><code>type: &quot;blog&quot;,
+</code></pre></div><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d0f532d61f4540a3a99423473537fd30~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <p>然后在 <strong>docs</strong> 目录下的 <strong>README.md</strong> 文档里加入如下代码：</p> <div class="language- extra-class"><pre class="language-text"><code>---
+home: true
+heroImage: &quot;/live.jpg&quot;
+heroText: Shark Xu
+heroImageStyle:
+  {
+    maxHeight: &quot;288px&quot;,
+    display: block,
+    borderRadius: &quot;19% 81% 23% 77% / 44% 57% 43% 56%&quot;,
+    boxShadow: &quot;0 15px 18px rgba(0,0,0,0.2)&quot;,
+  }
+---
+</code></pre></div><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/343eb9a0d41c429784b04c098a24dc3f~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <p>像 <code>live.png</code> 这种静态图片资源也是放在 <strong>.vuepress/public</strong> 下。如果觉得多余，这里的 <code>heroImage</code> 也可以省略。</p> <p>我们也可以设置首页的背景图片，如果想改变背景图片的样式，可以通过 <code>bgImageStyle</code> 来实现想要的效果。</p> <div class="language- extra-class"><pre class="language-text"><code>---
+home: true
+heroText: Shark Xu
+bgImage: &quot;/blue.jpg&quot;
+bgImageStyle: { height: &quot;100%&quot;, boxShadow: &quot;0 15px 18px rgba(0,0,0,0.2)&quot; }
+---
+</code></pre></div><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38639fa4816d47259ba46a6c89cb35ac~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <h2 id="添加插件"><a href="#添加插件" class="header-anchor">#</a> 添加插件</h2> <p>这里就到了大家最感兴趣的插件部分了。我的博客里总共安装了三个插件，分别是樱花效果，鼠标点击效果以及左下角的音乐播放器。</p> <blockquote><p>樱花效果</p></blockquote> <p>首先先安装它：</p> <div class="language- extra-class"><pre class="language-text"><code>npm install vuepress-plugin-sakura -D
+</code></pre></div><p>然后在 <strong>config.js</strong> 中加入 <code>plugins</code>：</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+     ...
+     plugins: [
+        [
+          &quot;sakura&quot;,
+          {
+            num: 20, // 默认数量
+            show: true, //  是否显示
+            zIndex: -1, // 层级
+            img: {
+              replace: false, // false 默认图 true 换图 需要填写httpUrl地址
+            },
+          },
+        ],
+     ]
+     ...
+}
+</code></pre></div><blockquote><p>鼠标点击效果</p></blockquote> <p>安装：</p> <div class="language- extra-class"><pre class="language-text"><code>npm install vuepress-plugin-cursor-effects -D
+</code></pre></div><p>使用：</p> <div class="language- extra-class"><pre class="language-text"><code> plugins: [
+    [...],
+    [
+      &quot;cursor-effects&quot;,
+      {
+        size: 4, // size of the particle, default: 2
+        shape: &quot;star&quot;, // ['star' | 'circle'], // shape of the particle, default: 'star'
+        zIndex: 999999999, // z-index property of the canvas, default: 999999999
+      },
+    ],
+ ]
+</code></pre></div><blockquote><p>音乐播放器</p></blockquote> <p>安装：</p> <div class="language- extra-class"><pre class="language-text"><code>npm install @vuepress-reco/vuepress-plugin-bgm-player -D
+</code></pre></div><p>使用：</p> <div class="language- extra-class"><pre class="language-text"><code> plugins: [
+    [...],
+    [...],
+     [
+      &quot;@vuepress-reco/vuepress-plugin-bgm-player&quot;,
+      {
+        audios: [
+          {
+            name: &quot;강남역 4번 출구&quot;,
+            artist: &quot;Plastic / Fallin` Dild&quot;,
+            url: &quot;https://assets.smallsunnyfox.com/music/2.mp3&quot;,
+            cover: &quot;https://assets.smallsunnyfox.com/music/3.jpg&quot;,
+          },
+          {
+            name: &quot;팔베개&quot;,
+            artist: &quot;최낙타&quot;,
+            url: &quot;https://assets.smallsunnyfox.com/music/3.mp3&quot;,
+            cover:
+              &quot;https://p1.music.126.net/qTSIZ27qiFvRoKj-P30BiA==/109951165895951287.jpg?param=200y200&quot;,
+          },
+        ],
+        // 是否默认缩小
+        autoShrink: true,
+        // 缩小时缩为哪种模式
+        shrinkMode: &quot;float&quot;,
+        // 悬浮窗样式
+        floatStyle: { bottom: &quot;20px&quot;, &quot;z-index&quot;: &quot;999999&quot; },
+      },
+    ],
+ ]
+</code></pre></div><p>这里需要注意的是，歌曲 <code>url</code> 链接格式需为 <code>MP3</code> 格式，否则无法播放。</p> <p>如果大家还对其他插件感兴趣，可以在网上直接搜索 <code>Vuepress</code> 插件就可以查找到更多内容。</p> <p>至此，博客的效果如下所示：</p> <blockquote><p>界面效果</p></blockquote> <img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f4324a5a082b43a18051f409c30ae6c4~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"> <blockquote><p>动态效果</p></blockquote> <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/828feb86450a446aa632544d57bbdb56~tplv-k3u1fbpfcp-watermark.image?" alt="blogs.gif" width="100%"> <p>以上就是关于博客的一些优化以及插件的使用，下面是两种不同版本的对比。</p> <table><thead><tr><th>基础版</th> <th>升级版</th></tr></thead> <tbody><tr><td><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2247b6723a4f4bb5a003296bcc4d4dc8~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"></td> <td><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f4324a5a082b43a18051f409c30ae6c4~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" width="100%"></td></tr></tbody></table> <h1 id="部署-github-pages"><a href="#部署-github-pages" class="header-anchor">#</a> 部署 Github Pages</h1> <p>到这里，我们的博客网站基本搭建好了。这里将介绍如何将静态博客部署到 <code>Github Pages</code> 上。由于我没有服务器，所以我将博客部署到 <code>Github Pages</code> 上了，有服务器的小伙伴可以将它部署到服务器上，这是最好的选择。（后面我争取也弄个服务器来琢磨一下）</p> <p>我们首先在 <code>Github</code> 上新建一个仓库，名字自定义，这里我依旧取名为 <code>blogs</code>。记得将项目 <code>git</code> 初始化。</p> <p>然后我们需要在  <strong>config.js</strong>  添加一个  <code>base</code>  路径配置：</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+  ...
+  // 和仓库名相同
+  base: '/blogs/',
+  ...
+}
+</code></pre></div><p>然后我们在项目  <code>docs</code>  目录下创建一个脚本文件 <code>deploy.sh</code>，注意修改一下对应的用户名和仓库名，相关代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>#!/usr/bin/env sh
+
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
+npm run docs:build
+
+# 进入生成的文件夹
+cd docs/.vuepress/dist
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;
+# git push -f git@github.com:Xusssyyy/blogs.git master:gh-pages 我自己的格式
+
+git push -f git@github.com:XXX/XXX.git master:gh-pages
+
+cd -
+</code></pre></div><p>新建一个终端，执行  <code>sh deploy.sh</code></p> <div class="language- extra-class"><pre class="language-text"><code>sh deploy.sh
+</code></pre></div><p>执行这行命令要选择 <strong>Git Bash</strong>。</p> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5731e51d17754d3f90bcf1146f425b03~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p> <p>项目就会开始构建，然后上传到远程仓库上。</p> <p>最终我们可以在仓库的  <code>Settings -&gt; Pages</code>  中看到最后的地址。</p> <p>我最后生成的地址：https://xusssyyy.github.io/blog/</p> <p>至此，我们完成了相关部署，通过链接就可查看博客。如果要更新博客内容的话，将代码更新提交之后，执行脚本文件 <strong>deploy.sh</strong> 就可完成更新内容。</p> <h1 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h1> <p>以上就是使用 <code>VuePress</code> 搭建个人博客的大致流程，并使用 <code>Github Pages</code> 进行了简单部署。关于我在搭建过程中遇到的问题以及踩到的坑基本都在文章里说明了，如果大家在搭建的过程中遇到了问题，我们可以在评论区交流讨论，发现问题，及时解决问题。整个博客跟着文章搭建一遍的话很快就可以完成，所以建议大家手动敲一遍。</p> <p>关于于博客的更多美化和升级，大家也可以去 <code>Vuepress</code> 的官方文档查找更多详细资料，我这里介绍了我的博客的一些升级步骤。</p> <p>如果大家觉得这篇文章对你有帮助，不要忘了给我一个小小的赞 <strong><em>ღ( ´･ᴗ･` )</em></strong> 。</p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#本地初步搭建" class="sidebar-link reco-side-本地初步搭建" data-v-b57cc07c>本地初步搭建</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#基本配置" class="sidebar-link reco-side-基本配置" data-v-b57cc07c>基本配置</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#_1-添加标题和描述" class="sidebar-link reco-side-_1-添加标题和描述" data-v-b57cc07c>1. 添加标题和描述</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#_2-添加导航栏" class="sidebar-link reco-side-_2-添加导航栏" data-v-b57cc07c>2. 添加导航栏</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#_3-添加侧边栏" class="sidebar-link reco-side-_3-添加侧边栏" data-v-b57cc07c>3. 添加侧边栏</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#加入主题" class="sidebar-link reco-side-加入主题" data-v-b57cc07c>加入主题</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#_1-vuepress-theme-reco" class="sidebar-link reco-side-_1-vuepress-theme-reco" data-v-b57cc07c>1. vuepress-theme-reco</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#_2-其他主题" class="sidebar-link reco-side-_2-其他主题" data-v-b57cc07c>2. 其他主题</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#整体样式修改" class="sidebar-link reco-side-整体样式修改" data-v-b57cc07c>整体样式修改</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#_1-主题色修改" class="sidebar-link reco-side-_1-主题色修改" data-v-b57cc07c>1. 主题色修改</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#_2-其他样式修改" class="sidebar-link reco-side-_2-其他样式修改" data-v-b57cc07c>2. 其他样式修改</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#分类和标签" class="sidebar-link reco-side-分类和标签" data-v-b57cc07c>分类和标签</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#文章信息" class="sidebar-link reco-side-文章信息" data-v-b57cc07c>文章信息</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#日期的格式" class="sidebar-link reco-side-日期的格式" data-v-b57cc07c>日期的格式</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#头像图标" class="sidebar-link reco-side-头像图标" data-v-b57cc07c>头像图标</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#首页配置" class="sidebar-link reco-side-首页配置" data-v-b57cc07c>首页配置</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/blogs/Fronts/3.html#添加插件" class="sidebar-link reco-side-添加插件" data-v-b57cc07c>添加插件</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><canvas id="vuepress-canvas-cursor"></canvas><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://assets.smallsunnyfox.com/music/2.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:20px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://assets.smallsunnyfox.com/music/3.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://assets.smallsunnyfox.com/music/3.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>강남역 4번 출구</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>Plastic / Fallin` Dild</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div></div></div>
+    <script src="/blog/assets/js/app.aa1056b8.js" defer></script><script src="/blog/assets/js/3.a9fde2ae.js" defer></script><script src="/blog/assets/js/1.16b4e971.js" defer></script><script src="/blog/assets/js/21.5e8d6eb3.js" defer></script>
+  </body>
+</html>
